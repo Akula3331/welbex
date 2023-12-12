@@ -1,0 +1,22 @@
+.con{
+    display: flex;
+    gap: 30px;
+    justify-content: end;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.1);
+        transition: .6s;
+    }
+    &:active{
+        opacity: .1;
+    }
+}
+@media screen and (max-width:400px){
+    .con{
+        justify-content: start;
+    }
+}

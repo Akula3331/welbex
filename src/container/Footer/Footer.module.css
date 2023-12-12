@@ -1,0 +1,110 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.con{
+    display: flex;
+    gap: 50px;
+    text-align: left;
+}
+.txt{
+    font-family: 'Inter', sans-serif;
+    color: #E4E5EA;
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    &:active{
+        color: #4077F3;
+    }
+    
+}
+.headerTxt{
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    color: #656566;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.txtCon{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.miniTxt{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sBlock{
+    display: flex;
+    gap: 50px;
+}
+.right{
+    text-align: right;
+}
+.conTwo{
+    display: flex;
+    flex-direction: column;
+    p{
+        font-family: 'Inter', sans-serif;
+        color: #E4E5EA;
+        text-decoration: none;
+        outline: none;
+        margin: 0;
+        &:active{
+            color: #4077F3;
+        } 
+    }
+}
+.txtTwo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.endTxt{
+    font-family: 'Inter', sans-serif;
+    color: #E4E5EA;
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    text-align: right;
+    &:active{
+        color: #4077F3;
+    }
+}
+
+  
+@media screen and (max-width:400px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .con{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .conTwo{
+        margin-top: 30px;
+    }
+    .headerTxt{
+        font-size: 12px;
+    }
+    .txt{
+        font-size: 14px;
+        width: 120px;
+    }
+    .right{
+        text-align: left;
+    }
+    .endTxt{
+        text-align: left;
+    }
+    .txtTwo{
+        gap: 10px;
+    }
+    .sBlock{
+        gap: 35px;
+    }
+}

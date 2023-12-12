@@ -1,0 +1,59 @@
+.App {
+  text-align: center;
+  background-color: #0e1014;
+  position: relative;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.con {
+  text-align: right;
+}
+.text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  color: #e4e5ea;
+  margin: 0;
+  margin-top: 20px;
+}
+.link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  color: #e4e5ea;
+  &:active {
+    color: #4077f3;
+  }
+}
+.redBallB {
+  position: absolute;
+  top: 50px;
+  left: 500px;
+}
+.redLig {
+  position: absolute;
+  top: -110px;
+  left: -450px;
+}
+.purBall{
+  position: absolute;
+  top: -10px;
+  right: 500px;
+}
+.purLig{
+position: absolute;
+top: 0;
+right: 200px;
+}
+@media screen and (max-width: 400px) {
+  .con {
+    text-align: center;
+  }
+  .container {
+    padding: 20px 0;
+  }
+  .block{
+    display: none;
+  }
+}

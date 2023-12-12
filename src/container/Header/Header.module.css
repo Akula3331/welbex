@@ -1,0 +1,58 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.con{
+    display: flex;
+    gap: 50px;
+}
+.iconCon{
+    display: flex;
+    flex-direction: column;
+}
+.iconTxt{
+    width: 180px;
+    font-size: 10px;
+    color: #E4E5EA;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+.icon{
+    width: 140px;
+}
+.txt{
+    font-family: 'Inter', sans-serif;
+    color: #E4E5EA;
+    text-decoration: none;
+    outline: none;
+    &:active{
+        color: #4077F3;
+    }
+}
+.txtCon{
+
+    display: flex;
+    gap: 30px;
+}
+@media screen and (max-width:400px){
+    .container{
+        justify-content: center;
+    }
+    .iconCon{
+        display: none;
+    }
+    .txtCon{
+        padding: 22px 5px;
+        gap: 15px;
+    }
+    .txt{
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    .txt:nth-child(5){
+        display: none;
+    }
+    .con:nth-child(2){
+        display: none;
+    }
+}

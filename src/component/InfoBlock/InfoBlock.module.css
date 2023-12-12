@@ -1,0 +1,51 @@
+.con{
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.txtCon{
+    display: flex;
+    text-align: right;
+}
+.title{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: #E4E5EA;
+}
+.txt{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #E4E5EA;
+    width: 160px;
+    margin: 0;
+}
+.conTwo{
+    display: none;
+}
+.line{
+    width: 10px;
+    height: 2px;
+    background:linear-gradient(90deg ,#FCB045 , #FD1D1D );
+
+}
+.miniCon{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+@media screen and (max-width:400px){
+    .con{
+        display: none;
+    }
+    .conTwo{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .txt{
+        width: auto;
+    }
+    .txtCon{
+        gap: 10px;
+    }
+}

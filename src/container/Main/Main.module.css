@@ -1,0 +1,71 @@
+/* Main.module.css */
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 90px 0;
+}
+.title {
+  text-align: left;
+  font-family: "Inter";
+  font-size: 48px;
+  color: #e4e5ea;
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.titleColor {
+  /* Добавьте этот стиль, если не срабатывает без него */
+  font-weight: 900;
+  background: linear-gradient(to right, #fcb045, #ff3f78);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+.titleTxt{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    text-align: right;
+    color: #e4e5ea;
+}
+.subTitle{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #e4e5ea;
+    text-align: left;
+    margin: 0;
+}
+
+.blend{
+    text-transform: uppercase;
+    font-weight: 900;
+    background: linear-gradient(to right, #fcb045, #ff3f78);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+.btnCon{
+    text-align: right;
+}
+@media screen and (max-width:400px){
+    .container{
+        flex-direction: column;
+        padding: 40px 0;
+        align-items: center;
+        background: url('../../../public/icon/bg.svg');
+        background-size: cover;
+        background-position: center;
+        margin:  0;
+        margin-bottom: 30px;
+    }
+    .title{
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+    .titleTxt{
+        margin-top: 60px;
+        text-align: left;
+    }
+    .btnCon{
+        display: none;
+    }
+}
